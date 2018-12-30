@@ -1,0 +1,75 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        // Check whether the number is even or odd.
+        var num = 9;
+        if (num % 2 == 0) {
+            alert("Even Number.");
+        }
+        else {
+            alert("Odd Number");
+        }
+
+        // if, else and elseif statements
+        var admitCard = true, geometryBox = false, haveAFriend = false;
+
+        if (admitCard == true && geometryBox == true) {
+            alert("You can take the test");
+        }
+        else if (admitCard == true && geometryBox == false) {
+            if (haveAFriend == true) {
+                alert("You can take the test, as you have a friend and u can borrow it.");
+            }
+            else {
+                alert("Sorry, all conditions failed.");
+            }
+        }
+        else {
+            alert("You can not take the test");
+        }
+
+        // Grading Example
+        var english = parseInt(prompt("Enter English Marks."));
+        var maths = Number(prompt("Enter Maths Marks."));
+        var physics = +(prompt("Enter Physics Marks."));
+
+        // Above all methods are used to convert string into number format.
+
+        var total = english + maths + physics;
+        console.log("Total Marks Are: " + total);
+
+        var percentage = Math.round((total / 300) * 100);
+        console.log("The Percentage is: " + percentage + "%");
+
+        var grade;
+
+        if (percentage > 79) {
+            grade = "A+";
+        }
+        else if (percentage > 69 && percentage < 80) {
+            grade = "A";
+        }
+        else if (percentage > 59 && percentage < 70) {
+            grade = "B";
+        }
+        else if (percentage > 49 && percentage < 60) {
+            grade = "C";
+        }
+        else if (percentage > 39 && percentage < 50) {
+            grade = "D";
+        }
+        else {
+            grade = "N/A -- Fail."
+        }
+
+        console.log("The Grade is: " + grade);
+
+    </script>
+</body>
+
+</html>
